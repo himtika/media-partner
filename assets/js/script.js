@@ -137,5 +137,20 @@ if (showTermsBtn) {
   });
 }
 
+(function($) {
+  "use strict";
 
+  function handlePreloader() {
+    console.log('Preloader triggered'); // debug
+    if ($('.preloader').length) {
+      $('body').addClass('page-loaded');
+      $('.preloader').delay(500).fadeOut(300);
+    }
+  }
+
+  $(window).on('load', function() {
+    console.log('Window fully loaded'); // debug
+    handlePreloader();
+  });
+})(jQuery);
 
