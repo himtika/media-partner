@@ -281,7 +281,6 @@ nav ul li a:hover {
   .mediapartner {
     margin: auto;
     position: relative;
-    border: 2px solid red;
     width: 100%;
     height: 100%;
     overflow: hidden;
